@@ -1,3 +1,16 @@
+#title {
+    font-size: 1.70em;
+    color: #9ccc9c;
+    line-height: 75px;
+    font-family: Noto Sans;
+    order: 2;
+}
+img {
+    height: 75px;
+    width: 75px;
+    margin-right: auto;
+    order: 3;
+}
 body {
     background-image: url("background.jpg");
     background-size: cover;
@@ -9,7 +22,10 @@ body {
 header {
     height: 75px;
     background-color: #149414;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row-reverse;
 }
 footer {
     background-color: black;
@@ -19,10 +35,6 @@ footer {
     margin-top: auto;
     text-align: center;
 }
-img {
-    height: 75px;
-    width: 75px;
-}
 a {
     color: white;
     text-decoration: none;
@@ -30,22 +42,14 @@ a {
 a:hover {
     font-style: italic;
 }
-#logo {
-    float: left;
-}
 #navBar {
-    float: right;
+    display: flex;
     color: white;
     text-decoration: none;
-    line-height: 75px;
-    margin-right: 20px;
-    font-family: Roboto;
-}
-#title {
-    font-size: 1.70em;
-    color: #9ccc9c;
-    line-height: 75px;
-    font-family: Noto Sans;
+    font-family: Roboto;    
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin: 10px;
 }
 .mainText {
     background-color:rgba(14,107,14,.8);
@@ -73,6 +77,9 @@ a:hover {
     font-weight: bolder;
     border-radius: 15px;
     margin-top: 100px;
+}
+#temp{
+    color: #149414;
 }
 /* Hacker Hex Code Colors Scheme
 #149414 #0e6b0e #649568 #9ccc9c #2b5329 */
