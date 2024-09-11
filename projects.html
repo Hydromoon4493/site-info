@@ -1,75 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Projects</title>
-        <link rel='stylesheet' type='text/css' href='styles.css'>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Rowdies&display=swap" rel="stylesheet">
-        <style>
-            table {
-                background-color:rgba(14,107,14,.8);
-                font-size: 1.3em;
-                color: white;
-                border: 2px solid #9ccc9c;
-                margin-left: auto;
-                margin-right: auto;
-                font-family: Roboto;
-                border-radius: 15px;
-                word-break: break-word;
-                padding: 15px;
-                margin-top: 5px;
-                text-align: center;
-            }
-        </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
-    <body>
-        <header>
-            <div id='navBar'>
-                <a href="aboutMe.html">About Me</a> | 
-                <a href="projects.html">Projects</a> | 
-                <a href="index.html">Main Page</a>
-            </div>
-            <img src='logo.png' id='logo' alt='website-image' />
-            <div id='title'>Sam's Website</div>
-        </header>
-        <!-- End of header -->
+<header>
+    <h1>My Projects</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="mailto:sam@jpsdomain.org">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <main>
-            <div class='subTitle'>High School Projects</div>
-            <table>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Link to Project</th>
-                </tr>
-                <tr>
-                    <td>Black Veil Brides Albums</td>
-                    <td><a href='./Black-Veil-Brides/BlackVeilBrides_Albums.html' />Click me</a></td>
-                </tr>
-                <tr>
-                    <td>Andy Black Albums</td>
-                    <td><a href='./Andy-Black/andyBlack.html' />Click me</a></td>
-                </tr>
-            </table>
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Technologies</th>
+                <th>Link</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Project 1</td>
+                <td>All published albums of the band "Black Veil Brides"</td>
+                <td>HTML and CSS</td>
+                <td><a href="/Black-Veil-Brides/BlackVeilBrides_Albums.html">View</a></td>
+                <td>January 2023</td>
+            </tr>
+            <tr>
+                <td>Project 2</td>
+                <td>All published albums of the artist "Andy Black"</td>
+                <td>HTML and CSS</td>
+                <td><a href="/Andy-Black/andyBlack.html">View</a></td>
+                <td>January 2023</td>
+            </tr>
+            <!-- Add more projects as needed -->
+        </tbody>
+    </table>
+</div>
 
-            <div class='subTitle'>College Projects</div>
-            <table>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Link to Project</th>
-                </tr>
-                <tr>
-                    <td>TBD</td>
-                    <td><a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs' />Don't click me</a></td>
-                </tr>
-            </table>
-        </main>
-        <!-- End of main -->
+<footer>
+    <p>© 2024 Sam Vossen</p>
+    <div class="social-icons">
+        <a href="https://github.com/Hydromoon4493" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sam-vossen-5456a1328/?trk=opento_sprofile_details" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://app.joinhandshake.com/profiles/57657254" target="_blank" title="Handshake"><i class="fas fa-handshake"></i></a>
+    </div>
+</footer>
 
-        <footer>
-            <!-- <a href='credit.html'>Credits</a> -->
-        </footer>
-        <!-- End of footer -->
-    </body>
+</body>
 </html>
