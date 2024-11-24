@@ -6,40 +6,91 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Home</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="mailto:samATjpsdomainDOTorg">Contact</a></li>
-        </ul>
+<!-- Header -->
+<header class="bg-header text-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
 
-<div class="container">
-    <div class="profile-pic">
-        <img src="pfp.png" alt="Professional Picture">
-    </div>
-    <div class="bio">
-        <h2>Sam Vossen</h2>
-        <p>Sam Vossen is a freshman at Elizabethtown College in Pennsylvania. He is an Information Systems majors with an concentration in Cyber Security. Among being interested in all things computer Sam is a amateur programmer knowing basic HTML, CSS, and Javascript. He is also learning Python and Java on a college level.</p>
-        <p>Sam is involved in many clubs at Etown including: The Computer Science Club, Robotics and Machine Intelligence (RMI), Sock and Buskin (Theater), and the Outing Club. He is interested in many different things and loves to learn more about basically anything he can.</p>
+<!-- Profile Section -->
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="pfp.png" class="profile-img" alt="Professional Picture">
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sam Vossen</h5>
+                    <p class="card-text">Sam is a freshman at Elizabethtown College in Pennsylvania, majoring in Information Systems with a concentration in Cybersecurity and a minor in Crimnal Justice. He has an interest in computers, programming, and technology. He is currently learning Python and Java in college with knowledge on several other programming languages.</p>
+                    <p class="card-text">In his spare time, he enjoy being involved in clubs like the Computer Science Club, Sock and Buskin (Theater), and the Outing Club. He is always interested in learning more whether computer realted or not.</p>
+
+                    <!-- Button to trigger the contact modal -->
+                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                        Contact Info
+                    </button> -->
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
+<!-- Footer Section -->
 <footer>
-    <p>© 2024 Sam Vossen</p>
-    <div class="social-icons">
-        <a href="https://github.com/Hydromoon4493" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/sam-vossen-5456a1328/?trk=opento_sprofile_details" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://app.joinhandshake.com/profiles/57657254" target="_blank" title="Handshake"><i class="fas fa-handshake"></i></a>
+    <div class="container">
+        <p>© 2024 Sam Vossen</p>
     </div>
 </footer>
+
+<!-- Modal for Contact Info -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Email:</strong> sam@jpsdomain.org</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Hydromoon4493" target="_blank">github.com/Hydromoon4493</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sam-vossen-5456a1328" target="_blank">linkedin.com/in/sam-vossen</a></p>
+                <p><strong>Handshake:</strong> <a href="https://app.joinhandshake.com/profiles/57657254" target="_blank">joinhandshake.com/profiles/57657254</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
