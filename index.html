@@ -45,8 +45,8 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Sam Vossen</h5>
-                    <p class="card-text">Sam is a freshman at Elizabethtown College in Pennsylvania, majoring in Information Systems with a concentration in Cybersecurity and a minor in Crimnal Justice. He has an interest in computers, programming, and technology. He is currently learning Python and Java in college with knowledge on several other programming languages.</p>
-                    <p class="card-text">In his spare time, he enjoy being involved in clubs like the Computer Science Club, Sock and Buskin (Theater), and the Outing Club. He is always interested in learning more whether computer realted or not.</p>
+                    <p class="card-text">Sam is a freshman at Elizabethtown College in Pennsylvania, majoring in Information Systems with a concentration in Cybersecurity and a minor in Criminal Justice. He has an interest in computers, programming, and technology. He is currently learning Python and Java in college with knowledge of several other computer languages.</p>
+                    <p class="card-text">In his spare time, he enjoys being involved in clubs like the Computer Science Club, Sock and Buskin (Theater), and the Outing Club; in addition to things like hanging out with his friends and working out at the gym. </p>
 
                     <!-- Button to trigger the contact modal -->
                     <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
@@ -60,8 +60,9 @@
 
 <!-- Footer Section -->
 <footer>
-    <div class="container">
-        <p>© 2024 Sam Vossen</p>
+    <div class="container text-center">
+        <p>It's not a bug, it's an undocumented feature.</p>
+        <p>Last updated: <span id="lastUpdated"></span></p>
     </div>
 </footer>
 
@@ -92,6 +93,13 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Get the last modified date and format it to show only the date (no time)
+    const lastModifiedDate = new Date(document.lastModified);
+    const formattedDate = lastModifiedDate.toLocaleDateString(); // Formats the date (MM/DD/YYYY)
+    document.getElementById('lastUpdated').textContent = formattedDate;
+</script>
 
 </body>
 </html>

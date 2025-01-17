@@ -76,7 +76,7 @@
             </li>
             <li><strong>To-Go Host | Texas Roadhouse</strong> May 2024 - August 2024
                 <ul>
-                    <li>Efficiently organizes, packages, and prepares online orders for pickup.</li>
+                    <li>Responsible for organizing, packaging, and preparing online orders for pickup.</li>
                 </ul>
             </li>
         </ul>
@@ -103,15 +103,46 @@
 
 <!-- Footer Section -->
 <footer>
-    <div class="container">
-        <p>© 2024 Sam Vossen</p>
+    <div class="container text-center">
+        <p>It's not a bug, it's an undocumented feature.</p>
+        <p>Last updated: <span id="lastUpdated"></span></p>
     </div>
 </footer>
+
+<!-- Modal for Contact Info -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Email:</strong> sam@jpsdomain.org</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Hydromoon4493" target="_blank">github.com/Hydromoon4493</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sam-vossen-5456a1328" target="_blank">linkedin.com/in/sam-vossen</a></p>
+                <p><strong>Handshake:</strong> <a href="https://app.joinhandshake.com/profiles/57657254" target="_blank">joinhandshake.com/profiles/57657254</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Get the last modified date and format it to show only the date (no time)
+    const lastModifiedDate = new Date(document.lastModified);
+    const formattedDate = lastModifiedDate.toLocaleDateString(); // Formats the date (MM/DD/YYYY)
+    document.getElementById('lastUpdated').textContent = formattedDate;
+</script>
 
 </body>
 </html>
