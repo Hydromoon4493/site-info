@@ -6,8 +6,6 @@ const quotes = [
     "That's not a flaw, it's a unique functionality.",
     "It’s not chaos, it’s organized chaos.",
     "It's totaly chaos.",
-    "I’m not procrastinating, I’m prioritizing.",
-    "I'm definitely procrastinating.",
     "I’m tired, I’m going to taking a break.",
     "That's not a crash, it’s an unscheduled restart.",
 ];
