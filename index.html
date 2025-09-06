@@ -66,9 +66,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
-    // Get the last modified date and format it to show only the date (no time)
+    // Get the last modified date and format it to "YYYY-MM-DD"
     const lastModifiedDate = new Date(document.lastModified);
-    const formattedDate = lastModifiedDate.toLocaleDateString(); // Formats the date (MM/DD/YYYY)
+    const formattedDate = lastModifiedDate.toISOString().split('T')[0]; // Formats the date to "YYYY-MM-DD"
     document.getElementById('lastUpdated').textContent = formattedDate;
 </script>
 
