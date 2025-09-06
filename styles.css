@@ -85,6 +85,7 @@ footer .social-icons a:hover {
 .card-title {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #000000;
 }
 
 .card-text {
@@ -152,4 +153,53 @@ th {
 footer {
     background-color: #333; /* Updated footer background */
     color: #fff; /* Ensures text is visible on dark background */
+}
+
+/* Game Card Styling */
+.game-card {
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 350px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Game Card Image Styling */
+.game-card-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #333;
+    border: 10px solid #ffffff; /* Adds a border around the image */
+    border-radius: 50px; /* Optional: Adds rounded corners to the image */
+}
+
+.github-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    margin-top: -20px;
+    margin-left: 15px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.github-btn:hover {
+    background-color: #218838;
+}
+
+/* Tag Styling */
+.tag {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    margin: 2px;
 }
