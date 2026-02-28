@@ -101,7 +101,7 @@ footer .social-icons a:hover {
     margin-bottom: 20px;
     transition: transform 0.3s ease;
     border: 5px solid #84cc98;
-    object-position: center top;
+    object-fit: cover;
 }
 
 .profile-img:hover {
